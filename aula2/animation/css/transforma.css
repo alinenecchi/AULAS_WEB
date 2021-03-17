@@ -1,39 +1,38 @@
-/*
-translate 
-    primeiro param:150 px move para direita e -150 para a esquerda
-    segundo param:150 px move para cima e -150 para a baixo
-rotate rotaciona um elemento em x graus - "deg"
-scale aumenta ou diminui o tamanho de um elemento
-	scale(largura, altura), lembrando que 1=100% e 1.2=120%
-    scaleX(horizontal), scaleY(vertical)
-Transition
-    Inicia uma transição de 5 segundos, quando o valor da propriedade
-	transform for alterado*/
+#car1 {
+    /*A função translate move um elemento.
+    Neste caso, está movendo o objeto 100px para a direita e 80px para baixo.
+    translate(horizontal, vertical)*/
+    transform: translate(100px, 80px);
+}
 
-#card1 {
-    transform: translate(150px); 
+#car2 {
+    /*rotate rotaciona um elemento em x graus - "deg"*/
+    transform: rotate(45deg);
 }
-#card2{
-    transform: rotate(45deg);   
+
+#car3 {
+    /*scale aumenta ou diminui o tamanho de um elemento
+	scale(largura, altura), lembrando que 1=100% e 1.2=120%
+	scaleX(horizontal), scaleY(vertical)*/
+    transform: scale(1.2, 1.3);
 }
-#card3:houver{
-    transform: scaleX(1.2, 1.3); 
+
+#car4 {
+    /*Inicia uma transição de 5 segundos, quando o valor da propriedade	transform for alterado*/
+    transition: transform 3s;
 }
-#card4:houver{
-    transition: transform 5s;
-}
-#card4:houver{
+
+#car4:hover {
     transform: scale(0.5, 0.5);
 }
-#card5{
+
+#car5 {
     width: 256px;
     height: 256px;
-    transition: width 5s, heigth 2s;
+    transition: width 5s, height 2s;
 }
-#card5:houver{
+
+#car5:hover {
     width: 350px;
     height: 350px;
-}
-#card5{
-    transform: scaleX(0.5, 0.5); 
 }
