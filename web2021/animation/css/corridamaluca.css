@@ -1,0 +1,7 @@
+/*Código da animação
+A palavra "keyframes" indica que é 
+uma animação*/
+#card1 {
+   transition-duration: 10s;
+   width: 500px;
+}

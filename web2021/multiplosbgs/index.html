@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Era do Gelo</title>
+    <style type="text/css">
+        html{
+            /*define a largura*/
+            width: 100%;
+            /*define a largura*/
+            height: 100%;
+        }
+        body{
+            background: 
+                url(imgs/passaros.png),    /*imagem passaros*/ 
+                url(imgs/nuvem.png),       /*imagem nuvens*/ 
+                url(imgs/grama.png),       /*imagem grama*/ 
+                url(imgs/esquilo.png),     /*imagem esquilo*/
+                linear-gradient(#265fac,#c1e4ff);  /*imagem fundo */
+            background-repeat:   
+                no-repeat,                 /*imagem dos passaros nao repete*/
+                no-repeat,                 /*imagem da nuvens nao repete*/
+                repeat-x,                  /*imagem da grama repete eixo x horizontal */
+                no-repeat,                 /*imagem da esquilo nao repete*/
+                no-repeat;                 /*imagem da fundo*/
+            background-position: 
+                top -50px right,           /*posição: topo e direita passaros*/
+                top left,                  /*posição: topo e esquerda da nuvem */
+                bottom,                    /*posição:parte de baixo da grama, rodape */
+                bottom 65px right 100px,   /*posição:parte de baixo da esquilo com 50px de espaçamento da borda inferior e da borda da direita, rodape */
+                center;                    /*posição:parte de baixo da flor, rodape */
+            background-size: 
+                50% 50%,                    /*Define o tamanho da imagem dos passaros largura e altura*/
+                auto,                       /*Define o tamanho da imagem dos nuvem como automatico*/
+                auto,                       /*Define o tamanho da imagem dos grama como automatico*/
+                250px,                      /*Define o tamanho da imagem dos esquilo 250px de largura*/
+                auto;                       /*Define o tamanho da imagem dos flor como automatico*/
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
