@@ -1,7 +1,85 @@
 /*Código da animação
-A palavra "keyframes" indica que é 
-uma animação*/
-#card1 {
-   transition-duration: 10s;
-   width: 500px;
+A palavra "keyframes" indica que é uma animação*/
+@keyframes goLeft{
+   /*Estado inicial */
+   from {
+      margin-left: 600px;
+   }
+   /*Estado final*/
+   to {
+      margin-left: 5px;
+   }
+}
+
+@keyframes speedUp {
+     /*Estado inicial */
+   from {
+      margin-left: 0px;
+   }
+   /*Estado final*/
+   to {
+      margin-left: 1700px;
+   }
+}
+
+h1 {
+   /*Define o nome da animação que será usada pelo h1*/
+   animation-name: goLeft;
+   /*Define a duração da animação*/
+   animation-duration: 3s;
+}
+
+.carro {
+   /*Define a largura do elemento*/
+   width: 140px;
+    /*Define o nome da animação que será usada pelo h1*/
+   animation-name: speedUp;
+    /*Define a duração da animação*/
+   animation-duration: 8s;
+}
+
+#car1 {
+   /*Linear - Mantém a mesma velocidade da animação*/
+   animation-timing-function: linear;
+   /*Reverse - Começar a animação ao contrário*/
+   animation-direction: reverse;
+   transform: rotate(340deg);
+}
+
+/*Pesquisar se tem como alternar o tempo para animação alternada*/
+
+#car2 {
+   /*Ease - Começa lento, fica rapido e termina lento*/
+   animation-timing-function: Ease;
+   /*Executa a animação do começo e depois executa a animação ao contrario*/
+   animation-direction: alternate;
+   /*define quantas vezes ocorre a animação*/
+   animation-iteration-count: 2;
+}
+
+#car2 {
+   /*Ease - Começa lento, fica rapido e termina lento*/
+   animation-timing-function: Ease;
+   /*Executa a animação do começo e depois executa a animação ao contrario*/
+   animation-direction: alternate;
+   /*define quantas vezes ocorre a animação*/
+   animation-iteration-count: 2;
+}
+
+#car3 {
+   /*Ease-in - Começa lento, fica rapido.*/
+   animation-timing-function: ease-in;
+   /*Executa a animação ao contrario e depois executa a animação do começo */
+   animation-direction: alternate-reverse;
+   /*define quantas vezes ocorre a animação*/
+   animation-iteration-count: infinite;
+}
+
+#car4 {
+   /*Ease-in - Começa lento, fica rapido.*/
+   animation-timing-function: ease-in;
+   /*Executa a animação ao contrario e depois executa a animação do começo */
+   animation-direction: alternate-reverse;
+   /*define quantas vezes ocorre a animação*/
+   animation-iteration-count: infinite;
 }

@@ -36,3 +36,13 @@
     width: 350px;
     height: 350px;
 }
+
+#car6 {
+    transition: transform 3s;
+    /*Define o tempo de atraso para iniciar a transição*/
+    transition-delay: 1s;
+}
+#car6:hover {
+    /* Move (tranlate) o carro 6 para direita e para baixo e rotaciona ele em 10 graus, negattivo para esquerda e para cima*/
+    transform: translate(250px, 80px) rotate(10deg);
+}
