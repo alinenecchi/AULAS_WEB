@@ -180,4 +180,26 @@ footer a{
     color: #eee;
     text-decoration: none;
 }
+@media only screen and (max-width: 768px){
+    #featured li{
+        width: 46%;
+    }
+    #home-menu li{
+        width: 92%;
+        margin: 10px 0 0 0;
+    }
+    footer ul{
+        width: 43%;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 470px){
+    #featured li{
+        width: 94%;
+    }
+    footer ul{
+        width: 100%;
+        text-align: center;
+    }
+}
 
