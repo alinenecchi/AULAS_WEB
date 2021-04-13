@@ -180,6 +180,7 @@ footer a{
     color: #eee;
     text-decoration: none;
 }
+
 @media only screen and (max-width: 768px){
     #featured li{
         width: 46%;
@@ -193,7 +194,31 @@ footer a{
         text-align: center;
     }
 }
-@media only screen and (max-width: 470px){
+
+@media only screen and (max-width: 680px){
+    h1.logo {
+        width: 100%;
+        float: none;
+        background-position: center;
+        margin: 10px 0;
+    }
+    header nav {
+        float: none;
+        width: 100%;
+    }
+    header nav ul {
+        margin: 0;
+        padding: 0;
+    }
+    header nav ul li{
+        margin: 10px 0;
+        padding: 0;
+        width: 19%;
+        text-align: center;
+    }
+} 
+
+@media only screen and (max-width: 480px){
     #featured li{
         width: 94%;
     }
@@ -201,5 +226,11 @@ footer a{
         width: 100%;
         text-align: center;
     }
+    header nav ul li{
+        display: block;
+        width: 98%;
+
+    }
 }
+
 
