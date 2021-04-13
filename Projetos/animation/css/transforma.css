@@ -1,0 +1,39 @@
+/*
+translate 
+    primeiro param:150 px move para direita e -150 para a esquerda
+    segundo param:150 px move para cima e -150 para a baixo
+rotate rotaciona um elemento em x graus - "deg"
+scale aumenta ou diminui o tamanho de um elemento
+	scale(largura, altura), lembrando que 1=100% e 1.2=120%
+    scaleX(horizontal), scaleY(vertical)
+Transition
+    Inicia uma transição de 5 segundos, quando o valor da propriedade
+	transform for alterado*/
+
+#card1 {
+    transform: translate(150px); 
+}
+#card2{
+    transform: rotate(45deg);   
+}
+#card3:houver{
+    transform: scaleX(1.2, 1.3); 
+}
+#card4:houver{
+    transition: transform 5s;
+}
+#card4:houver{
+    transform: scale(0.5, 0.5);
+}
+#card5{
+    width: 256px;
+    height: 256px;
+    transition: width 5s, heigth 2s;
+}
+#card5:houver{
+    width: 350px;
+    height: 350px;
+}
+#card5{
+    transform: scaleX(0.5, 0.5); 
+}
