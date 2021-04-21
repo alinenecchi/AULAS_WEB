@@ -1,0 +1,36 @@
+/*
+    --Configurações Básicas--
+    Zerando bordas para ter maior domínio sobre o box
+    [*] para cada elemento do html e aplica essas propriedades
+    -- Color combination --
+    Soft Slippers {Champagne #FFF0DF -- Salmon #F0C9B3 -- Misty Blue #F8FAFD -- Taupe #B4AAA9}
+    Sun and Sand {Taupe #AA9C92 -- Blue Gray #A2A3AA -- Champagne #F7E7CE -- White #FFFFFF}
+ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  /*Facilita a manipulação da largura e altura dos elementos, calcula padding emargin incluidos no valor total*/
+}
+html {
+    background-color: #F8FAFD;
+    color: #A2A3AA;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+.row {
+    background-color: #F0C9B3;
+    /*Define a largura maxíma da linha*/
+    max-width: 1140px;
+    /*Define a largura maxíma da linha*/
+    margin: 0 auto;
+}
+header {
+    background-image: url(img/img-hero-header.jpg);
+    /*Define a altura do elemento*/
+    height:100vh;
+    /*Define tamamho da imagem de fundo*/
+    background-size: cover;
+    /*Define a posição da imagem de fundo*/
+    background-position: center;
+}
