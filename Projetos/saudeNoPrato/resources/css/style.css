@@ -16,21 +16,58 @@ html {
     color: #555555;
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 300;
-    text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;/*renderiza a fonte para melhor leitura*/
+    font-size: 20px ;
 }
 .row {
     background-color: #F0C9B3;
     /*Define a largura maxíma da linha*/
-    max-width: 1140px;
+    max-width: 1200px;
     /*Define a largura maxíma da linha*/
     margin: 0 auto;
 }
 header {
-    background-image: url(img/img-hero-header.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(img/img-hero-header.jpg);
     /*Define a altura do elemento*/
-    height:100vh;
+    height:100vh; /* vh significa tamanho do viewport*/
     /*Define tamamho da imagem de fundo*/
     background-size: cover;
     /*Define a posição da imagem de fundo*/
     background-position: center;
+    /*Define o espaçamento entre palavras*/
+    word-spacing: 5px;
+     /*Define o espaçamento entre letras/caracteres*/
+     letter-spacing: 1px;
+}
+h1{
+    margin: 0;
+    margin-bottom: 35px;
+    color: #F8FAFD ;
+    font-size: 240%;
+    text-transform: uppercase; /*todas as letras em maiúsculo*/
+    font-weight: 300; /*define a expessura da fonte*/
+}
+.hero-text-box {
+    width: 1200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*Usamos transforme para diminuir o espaçamento/ distancia*/
+    transform: translate(-50%, -50%);
+}
+.btn {
+    /*define a decoração do texto , neste caso como era um link retiramos o sublinhado*/
+    text-decoration: none;
+    font-weight: 300;
+    padding: 10px 30px;
+    border-radius: 200px;
+    border: 1px solid #e67e22;
+}
+.btn-full{
+    background-color: #e67e22;
+    color: #F8FAFD;  
+    margin-right: 10px;
+}
+.btn-ghost {
+    color: #e67e22;
 }
