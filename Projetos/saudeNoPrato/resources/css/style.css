@@ -11,6 +11,7 @@
     padding: 0;
     box-sizing: border-box;  /*Facilita a manipulação da largura e altura dos elementos, calcula padding emargin incluidos no valor total*/
 }
+
 html {
     background-color: #F8FAFD;
     color: #555555;
@@ -19,55 +20,103 @@ html {
     text-rendering: optimizeLegibility;/*renderiza a fonte para melhor leitura*/
     font-size: 20px ;
 }
+
 .row {
-    background-color: #F0C9B3;
-    /*Define a largura maxíma da linha*/
-    max-width: 1200px;
-    /*Define a largura maxíma da linha*/
-    margin: 0 auto;
+    /*background-color: #F0C9B3;*/
+    max-width: 1200px; /*Define a largura maxíma da linha*/
+    margin: 0 auto;  /*Define a largura maxíma da linha*/
 }
+
 header {
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(img/img-hero-header.jpg);
-    /*Define a altura do elemento*/
-    height:100vh; /* vh significa tamanho do viewport*/
-    /*Define tamamho da imagem de fundo*/
-    background-size: cover;
-    /*Define a posição da imagem de fundo*/
-    background-position: center;
-    /*Define o espaçamento entre palavras*/
-    word-spacing: 5px;
-     /*Define o espaçamento entre letras/caracteres*/
-     letter-spacing: 1px;
+    height:100vh; /* vh significa tamanho do viewport*/  /*Define a altura do elemento*/
+    background-size: cover; /*Define tamamho da imagem de fundo*/
+    background-position: center;    /*Define a posição da imagem de fundo*/    
+    word-spacing: 5px;      /*Define o espaçamento entre palavras*/
+    letter-spacing: 1px;    /*Define o espaçamento entre letras/caracteres*/
 }
+
 h1{
     margin: 0;
     margin-bottom: 35px;
     color: #F8FAFD ;
     font-size: 240%;
-    text-transform: uppercase; /*todas as letras em maiúsculo*/
-    font-weight: 300; /*define a expessura da fonte*/
+    text-transform: uppercase;  /*todas as letras em maiúsculo*/
+    font-weight: 300;           /*Define a expessura da fonte*/
 }
+
 .hero-text-box {
     width: 1200px;
     position: absolute;
     top: 50%;
     left: 50%;
-    /*Usamos transforme para diminuir o espaçamento/ distancia*/
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);    /*Usamos transforme para diminuir o espaçamento/ distancia*/
 }
-.btn {
-    /*define a decoração do texto , neste caso como era um link retiramos o sublinhado*/
-    text-decoration: none;
+
+.btn:link,
+.btn:visited {
+    text-decoration: none;   /*Define a decoração do texto , neste caso como era um link retiramos o sublinhado*/
     font-weight: 300;
     padding: 10px 30px;
     border-radius: 200px;
-    border: 1px solid #e67e22;
+    border: 1px solid #E67E22;
+    /*transition: ;*/
 }
-.btn-full{
-    background-color: #e67e22;
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #E67E22;
     color: #F8FAFD;  
     margin-right: 10px;
 }
-.btn-ghost {
-    color: #e67e22;
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    color: #E67E22;
 }
+
+.btn-full:hover {
+    background-color: #F8FAFD;
+    border: 1px #F7EEE6 solid;
+    color: #E67E22;
+    font-weight: 500;
+}
+
+.btn-ghost:hover {
+    background-color: #F8FAFD;
+    border: 1px #F7EEE6 solid;
+}
+
+/*--Configurações do Menu--*/
+
+.logo {
+    height: 100px;      /*Define altura do elemento*/
+    margin-top: 20px;   /*Define margem do elemento*/
+    float: left;        /*Define que o elemento fica a esquerda*/
+}
+
+.main-nav {
+    float: right;       /*Define que o elemento fica a direita*/
+    list-style: none;  /*Define os marcadores*/
+    margin-top: 20px;
+}
+
+.main-nav li {
+    display: inline-block; /*Permite outros elementos na mesma linha*/
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #F7EEE6;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    padding: 8px 0;
+    transition: border-botton 0.2s;
+}
+
+.main-nav li a:hover {
+    border-bottom: 2px solid #E67E22 ;
+}
+
