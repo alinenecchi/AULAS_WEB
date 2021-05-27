@@ -1,0 +1,58 @@
+@media only screen and (max-width:1200px ){
+    .hero-text-box{
+        width: 100%;
+        /*vamos colocar um espaçamento mínimo entre o texto e a borda do navegador*/
+        padding: 0 2%;
+    }
+    .row{
+        padding: 0 2%;
+    }
+}
+
+@media only screen and (max-width:1000px ){
+    html{
+        font-size: 18px;
+    }
+    section{
+        padding: 60px 0;
+    }
+    .long-copy{
+        width: 80%; /*tag p passa a ocupar 80% da largura da tela, sobrando 20%*/
+        margin-left: 10%; /*10% para cada lado*/ 
+    }
+    .icon-small{
+        width: 20px;
+        margin-right: 1px;
+    }
+    .city-feature{
+        font-size: 80%;
+    }
+}
+
+@media only screen and (max-width:880px ){
+    html{
+        font-size: 16px;
+    }
+    section{
+        padding: 40px 0;
+    }
+    h1{
+        font-size: 180%;
+    }
+    h2{
+        font-size: 150%;
+    }
+  
+}
+@media only screen and (max-width:480px ){
+    section{
+        padding: 25px 0;
+    }
+    .span-1-of-4{
+        width: 98%;
+    }
+    .btn{
+        margin-bottom: 10px;
+    }
+  
+}
